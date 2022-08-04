@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="../css/estilos.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>galeria</title>
 </head>
 <body>
@@ -25,9 +26,9 @@
 
     <main class="main_galeria">
 
-        <h2 class="titulo_body t_galeria"><i class="fa-solid fa-hammer">Nuestros Proyectos</i></h2>
+        <h2 class="titulo_body t_galeria" data-aos="fade" data-aos-duration="2000"><i class="fa-solid fa-hammer">Nuestros Proyectos</i></h2>
     
-        <section class="galeria">
+        <section class="galeria" data-aos="fade-up" data-aos-duration="2000">
             <div class="img img1"></div>
             <div class="img img2"></div>
             <div class="img img3"></div>
@@ -50,6 +51,14 @@
         </div>
 
     </footer>
+
+    <a href="#" class="subida">
+        <i class="fa-solid fa-angles-up"></i>
     
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 </html>

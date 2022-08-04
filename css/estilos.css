@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 /* header y barra nav de todas las pags*/
 header{
     width: 100%;
@@ -296,7 +303,101 @@ footer p{
     transition: 1s;
 }
 
+.subida{
+    bottom: 20px;
+    right: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 5px;
+    border-radius: 60px;
+    color: white;
+    background-color: #01057e;
+    text-align: center;
+    line-height: 50px;
+    border: 2px solid white;
+    position: fixed;
+}
+
 /* fin -css- galeria*/
+
+/* inicio -css- ubicacion */
+
+.main_ubicacion h2{
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.mapa{
+    border: 2px solid black;
+}
+
+.direccion{
+    margin: 10px 0 10px 5px;
+    font-size: 25px;
+}
+
+/* fin -css- ubicacion */
+
+/* inicio -css- contacto */
+
+.main_contacto{
+    background-image: url(../img/imagen_fondo_galeria.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.main_contacto h2{
+    padding: 15px 0 10px 10px;
+    text-shadow: 0px 0px 12px rgb(255, 255, 255), 0px 0px 12px rgb(255, 255, 255), 0px 0px 12px rgb(255, 255, 255);
+}
+
+.main_contacto p{
+    text-shadow: 0px 0px 12px rgb(255, 255, 255), 0px 0px 12px rgb(255, 255, 255);
+    padding-bottom: 20px;
+}
+
+.formulario{
+    display: flex;
+    border: 5px solid white;
+    padding: 20px 0 15px 10px;
+    margin-left: 15px;
+    width: 50%;
+}
+
+.label_contacto{
+    font-family: 'Bangers','cursive';
+    font-size: 22px;
+    padding-left: 15px;
+    text-shadow: 0px 0px 12px rgb(255, 255, 255), 0px 0px 12px rgb(255, 255, 255);
+}
+
+.formulario input{
+    background-color: rgb(206, 194, 194);
+}
+
+.formulario textarea{
+    background-color: rgb(206, 194, 194);
+    border: 2px solid black;
+}
+
+.input_mail_telefono{
+    width: 300px;
+    height: 20px;
+    border-radius: 20px;
+}
+
+.formulario input::placeholder{
+    color: rgb(83, 81, 81);
+    text-align: center;
+}
+
+.boton{
+    position: 50%;
+}
+
+/* inicio -css- contacto */
 
 /* inicio de media queries */
 
@@ -558,6 +659,13 @@ footer p{
     
 }
 
+@media screen and (max-width: 660px) {
+
+    .input_mail_telefono, textarea{
+        width: 200px;
+    }
+}
+
 @media screen and (max-width: 572px) {
     .tabla{
         margin-left: 0;
@@ -608,6 +716,20 @@ footer p{
         display: none;
         visibility: hidden;
     }
+
+    /* media queries ubicacion */
+
+    .direccion{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .formulario{
+        width: 60%;
+    }
+    
 }
 
 /* fin de media queries */
