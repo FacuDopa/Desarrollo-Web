@@ -168,41 +168,11 @@ h1{
     background-image: linear-gradient(0deg, #ffffff 0%, #0b0d31 30%, #0b0d31 60%, #ffffff 100%);
 
     min-height: calc(100vh - 260px);
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-    grid-template-areas:"texto1"
-                        "tabla"
-                        "texto2";    
 }
 
 .main_servicios .titulo_body{
     padding-top: 20px;
 }
-
-.texto1{
-    grid-area: texto1;
-}
-
-.secc_tabla{
-    grid-area: tabla;
-}
-
-.tabla{
-    margin-left: 110px;
-    background-color: darkcyan;
-}
-
-.tabla, th, td {
-    border: 2px solid black;
-    font-family: 'titan one', 'cursive';
-    font-size: 20px;
-}
-
-.texto2{
-    grid-area: texto2;
-}
-
 /* fin -css- servicios */
 
 /* inicio -css- galeria */
@@ -536,12 +506,6 @@ h1{
     }
 }
 
-@media screen and (max-width: 1204px) {
-    .tabla{
-        margin-left: 20px;
-    }
-}
-
 @media screen and (max-width: 1020px) {
     /* responsive galeria */
 
@@ -629,12 +593,6 @@ h1{
 
     .input_mail_telefono, textarea{
         width: 200px;
-    }
-}
-
-@media screen and (max-width: 572px) {
-    .tabla{
-        margin-left: 0;
     }
 }
 
