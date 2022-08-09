@@ -39,29 +39,47 @@
         <section class="formulario" data-aos="zoom-out-right" data-aos-duration="1500">
             <form action="">
 
-                <label for="Nombre" class="label_contacto"> Nombre y Apellido: </label>
-                <input type="text" name="Nombre" id="" required>
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="nombre" placeholder="nombreU" required>
+                    <label for="Nombre" class="label_contacto"> NOMBRE Y APELLIDO: </label>
+                </div>
         
                 <br> <br>
                 
                 <label for="metodo" class="label_contacto">Metodo de contacto:</label> <br>
                 
-                <input type="checkbox" name="metodoC" id="">
-                <label class="label_contacto" for="">Whatsapp</label> <br>
-        
-                <input type="checkbox" name="metodoC" id="">
-                <label class="label_contacto" for="">Email</label> <br>
+                <div class="form-check form-switch">
+                    <input class="form-check-input bg-secondary border-dark" type="checkbox" role="switch" name="metodoC" id="wpp">
+                    <label class="form-check-label label_contacto" for="wpp">Whatsapp</label>
+                </div>
                 
-                <input type="checkbox" name="metodoC" id="">
-                <label class="label_contacto" for="">Telefono</label> <br> <br>
+                <br>
+
+                <div class="form-check form-switch">
+                    <input class="form-check-input bg-secondary border-dark" type="checkbox" role="switch" name="metodoC" id="email">
+                    <label class="form-check-label label_contacto" for="email">Email</label>
+                </div>
                 
-                <label for="mail" class="label_contacto">Email: </label>
-                <input class="input_mail_telefono" type="email" name="mail" id="" placeholder="Introduce tu email">
+                <br>
+                
+                <div class="form-check form-switch">
+                    <input class="form-check-input bg-secondary border-dark" type="checkbox" role="switch" name="metodoC" id="telefono">
+                    <label class="form-check-label label_contacto" for="telefono">Telefono</label>
+                </div>
+                
+                <br> <br>
+                
+                <div class="form-floating">
+                    <input class="form-control input_mail_telefono" type="email" name="mail" id="" placeholder="Introduce tu email">
+                    <label for="mail" class="label_contacto">Email: </label>
+                </div>
         
                 <br> <br>
                 
-                <label for="" class="label_contacto">Telefono o Whatsapp: </label>
-                <input class="input_mail_telefono" type="text" placeholder="Introduce tu numero de telefono">
+                <div class="form-floating">
+                    <input class="form-control input_mail_telefono" type="text" id="numero" placeholder="Introduce tu numero de telefono">
+                    <label for="numero" class="label_contacto">Telefono o Whatsapp: </label>
+                </div>
                 
                 <br> <br>
                 
@@ -70,7 +88,7 @@
         
                 <br>
         
-                <input class="boton" type="submit" value="Enviar">
+                <button type="button" class="btn btn-dark btn-outline-light float-center">Enviar</button>
             </form>
         </section>
 
